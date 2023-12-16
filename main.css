@@ -1,0 +1,8 @@
+.banner[main-banner-box]
+{
+    backgroud-position: 50% 35%;
+    height: 330px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
