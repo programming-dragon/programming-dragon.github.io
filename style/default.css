@@ -1,10 +1,15 @@
-body
+*
 {
     margin: 0px;
+    padding: 0px;
+
+    color: white;
+}
+
+body
+{
     overflow: hidden;
     background-color: #478f;
-    color: white;
-    padding: 0px;
 }
 
 .banner[main-banner-box]
@@ -20,6 +25,16 @@ body
 .menu[main-menu-box]
 {
     margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-item[main-menu-item]
+{
+    font-size: 2em;
+    display: inline-block;
+    padding: 4px 20px;
 }
 
 @media (min-device-width: 320px)
