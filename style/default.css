@@ -1,13 +1,45 @@
 body
 {
     margin: 0px;
+    overflow: hidden;
+    background-color: #478f;
+    color: white;
+    padding: 0px;
 }
 
 .banner[main-banner-box]
 {
-    height: 330px;
+    min-height: 330px;
+    background-position:50%;
     background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;
-    margin: 0px;
+    bottom-padding: 0px;
+}
+
+.menu[main-menu-box]
+{
+    margin: 4px;
+}
+
+@media (min-device-width: 320px)
+{
+    .banner[main-banner-box]
+    {
+        
+    }
+}
+
+@media (min-device-width: 768px)
+{
+    .banner[main-banner-box]
+    {
+        min-width: 1700px;
+        height: auto;
+    }
+    
+    .menu[main-menu-box]
+    {
+        margin: 8px;
+    }
 }
