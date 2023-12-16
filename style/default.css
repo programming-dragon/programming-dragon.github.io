@@ -5,4 +5,5 @@
     background-repeat: no-repeat;
     position: relative;
     box-sizing: border-box;
+    border-width: 0px;
 }
