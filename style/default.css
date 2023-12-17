@@ -12,6 +12,29 @@ body
     background-color: #478f;
 }
 
+a
+{
+    text-decoration: none;
+}
+
+a[post-link]
+{
+    font-family: Courier;
+    text-decoration: underline;
+    color: yellow;
+    transition: color .5s ease;
+}
+
+a[post-link]:visited
+{
+    color: lightgreen;
+}
+
+a[post-link]:hover
+{
+    color: darkgreen;
+}
+
 .banner[main-banner-box]
 {
     min-height: 330px;
@@ -48,9 +71,9 @@ body
     padding: 4px 20px;
 }
 
-.menu-item[main-menu-item]
+.menu-item[page-title]
 {
-    
+    font-family: Lithe;
 }
 
 @media (max-device-width: 767px)
@@ -59,6 +82,11 @@ body
     {
         display: block;
         visibility: hidden;
+    }
+
+    .main-page-container
+    {
+        margin: 1%;
     }
 }
 
@@ -74,23 +102,54 @@ body
     {
         margin: 8px;
     }
+
+    .main-page-container
+    {
+        margin: 24px;
+        max-width: 60%;
+    }
 }
 
-.sidebar
+.main-page-container
 {
-}
-
-.generic-container
-{
-    padding: 5px;
-    background-color:
+    display: flex;
 }
 
 .text-box-preview
 {
+    display: block;
+    background-color: #2274ab;
+    color: darkyellow;
+    padding: 4px;
+}
+
+.text-box-title
+{
+    font-size: 2.6em;
+}
+
+.text-box-subtitle
+{
+    font-size: 1.4em;
+    color: lightgrey;
+    text-decoration: none;
 }
 
 .full-page-text-box
+{
+    margin: 8px;
+    font-size: 1.4em;
+}
+
+.full-page-title
+{
+    display: block;
+    font-size: 4.20em;
+    text-decoration: underline;
+    margin: 18px;
+}
+
+.sidebar
 {
 }
 
