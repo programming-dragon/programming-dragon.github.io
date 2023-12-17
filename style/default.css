@@ -22,26 +22,43 @@ body
     bottom-padding: 0px;
 }
 
-.menu[main-menu-box]
+.menu
 {
     margin: 4px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    min-width: 40%;
+}
+
+.menu[main-menu-box]
+{
+    justify-content: flex-end;
+}
+
+
+.menu[page-title]
+{
     justify-content: flex-start;
 }
 
-.menu-item[main-menu-item]
+.menu-item
 {
-    font-size: 2em;
+    font-size: 3em;
     display: inline-block;
     padding: 4px 20px;
 }
 
-@media (min-device-width: 320px)
+.menu-item[main-menu-item]
 {
-    .banner[main-banner-box]
+    
+}
+
+@media (max-device-width: 767px)
+{
+    .menu-item[main-menu-item]
     {
-        
+        display: block;
+        visibility: hidden;
     }
 }
 
@@ -57,4 +74,26 @@ body
     {
         margin: 8px;
     }
+}
+
+.sidebar
+{
+}
+
+.generic-container
+{
+    padding: 5px;
+    background-color:
+}
+
+.text-box-preview
+{
+}
+
+.full-page-text-box
+{
+}
+
+.sidebar-content
+{
 }
